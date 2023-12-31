@@ -27,7 +27,7 @@ terraform init
 terraform plan -out main.tfplan
 ```
 
-### exeute the plan
+### execute the plan
 ```
 terraform apply "main.tfplan"
 ```
