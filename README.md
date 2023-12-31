@@ -1,4 +1,4 @@
-# DEVOPS-DO
+# DEVOPS-DIGITALOCEAN
 
 In this project, we will create a Kubernetes cluster on Digital Ocean using Terraform. Next, we will set up our CI/CD using Azure Pipeline with the goal of deploying an Angular application and a custom domain
 
