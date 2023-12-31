@@ -1,7 +1,7 @@
 # DEVOPS-DO
 
 ## STEPS
-### 1. Deploy the basic architecture of the project
+### 1. Deploy the basic architecture of the project [repo](https://github.com/wlopezob/devops-do/tree/feature/step-1)
 - container registry
 - kubernetes
 - namespace
