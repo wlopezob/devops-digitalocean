@@ -1,7 +1,9 @@
 # DEVOPS-DO
 
+In this project, we will create a Kubernetes cluster on Digital Ocean using Terraform. Next, we will set up our CI/CD using Azure Pipeline with the goal of deploying an Angular application and a custom domain
+
 ## STEPS
-### 1. Deploy the basic architecture of the project [repo](https://github.com/wlopezob/devops-do/tree/feature/step-1)
+### 1. Deploy the basic architecture of the project with terraform [repo](https://github.com/wlopezob/devops-do/tree/feature/step-1)
 - Set up the container registry.
 - Configure Kubernetes, including the creation of a namespace.
 - Set up a Docker configuration JSON file and create a secret using it.
