@@ -5,12 +5,21 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.18",
 	"features": {
-		"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {}
+		"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/kubectl-asdf:2": {
+			"version": "latest"
+		},
+		"ghcr.io/cirolosapio/devcontainers-features/alpine-docker-outside-of-docker:0": {
+			"installDockerCompose": true
+		}
 	},
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"PKief.material-icon-theme",
-		"HashiCorp.terraform"
+		"HashiCorp.terraform",
+		"GitHub.copilot-chat"
 	],
 	"customizations": {
 		// Configure properties specific to VS Code.

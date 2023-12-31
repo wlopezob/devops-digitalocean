@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minetflix
+  namespace: youtube
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minetflix
+  template:
+    metadata:
+      labels:
+        app: minetflix
+    spec:
+      containers:
+      - name: minetflix
+        image: registry.digitalocean.com/youtube-ci/minetflix
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+        - name: docker-cfg

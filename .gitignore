@@ -34,4 +34,4 @@ override.tf.json
 terraform.rc
 .terraform.lock.hcl
 main.tfplan
-config
+kubeconfig

@@ -1,0 +1,19 @@
+<div class="p-3 h-100">
+  <p *ngIf="total">Se encontraron {{total}} resultados</p>
+
+  <div class="form-row align-content-stretch">
+    <div class="col-sm col-auto-5 mb-2" *ngFor="let movie of movies; let i=index">
+      <div class="card h-100" (click)="selection(movie)">
+        <img [src]="movie.Poster" alt="" class="card-img-top">
+        <div class="card-body">
+          <h6 class="card-title">{{movie.Title}}</h6>
+          <small>{{movie.Year}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-3 text-center" *ngIf="loading">
+    <i class="fa fa-spin fa-circle-o-notch fa-3x"></i>
+  </div>
+  <!-- <button class="btn btn-primary btn-block" (click)="more()">Buscar mas...</button> -->
+</div>

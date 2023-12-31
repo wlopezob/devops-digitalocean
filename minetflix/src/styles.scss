@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: fs_joeyregular;
+    src: url(https://cdn01.sura.net.pe/integra/webapps/cercania/prod/statics/assets/fonts/fs_joey-webfont.woff2)
+            format("woff2"),
+        url(https://cdn01.sura.net.pe/integra/webapps/cercania/prod/statics/assets/fonts/fs_joey-webfont.woff)
+            format("woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: fs_joeybold;
+    src: url(https://cdn01.sura.net.pe/integra/webapps/cercania/prod/statics/assets/fonts/fs_joey-bold.woff2)
+            format("woff2"),
+        url(https://cdn01.sura.net.pe/integra/webapps/cercania/prod/statics/assets/fonts/fs_joey-bold.woff)
+            format("woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: fs_joeylight;
+    src: url(https://cdn01.sura.net.pe/integra/webapps/cercania/prod/statics/assets/fonts/fs_joey-light.woff2)
+            format("woff2"),
+        url(https://cdn01.sura.net.pe/integra/webapps/cercania/prod/statics/assets/fonts/fs_joey-light.woff)
+            format("woff");
+}
+
+@font-face {
+    font-family: fs_joeymedium;
+    src: url(https://cdn01.sura.net.pe/integra/webapps/cercania/prod/statics/assets/fonts/fs_joey-medium.woff2)
+            format("woff2"),
+        url(https://cdn01.sura.net.pe/integra/webapps/cercania/prod/statics/assets/fonts/fs_joey-medium.woff)
+            format("woff");
+    font-style: normal;
+}
+
+body {
+    font-family: fs_joeyregular;
+}
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 1.15rem;
+    background-color: #272a2e;
+    color: #fff;
+}
+
+input[type="number"].textfield::-webkit-outer-spin-button,
+input[type="number"].textfield::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"].textfield {
+    -moz-appearance: textfield;
+}

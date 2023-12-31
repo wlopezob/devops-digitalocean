@@ -1,0 +1,57 @@
+<div *ngIf="movie">
+  <div class="bg-movie" [ngStyle]="{'background-image': 'url(&quot;' + movie.Poster + '&quot;)'}">
+    <div class="custom-bg">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <img class="poster" [src]="movie.Poster" height="450" alt="">
+          </div>
+          <div class="col">
+            <h2>{{movie.Title}} ({{movie.Year}})</h2>
+            <div class="summary">
+              <span class="pl-1 pr-1 border">{{movie.Rated}}</span> {{movie.Released}} ({{movie.Country}})
+              <span class="ml-2 mr-2">{{movie.Genre}}</span> <span class="ml-2">{{movie.Runtime}}</span>
+            </div>
+            <h4 class="mt-4">Resumen</h4>
+            <p>{{movie.Plot}}</p>
+            <div class="mt-4">
+              <h5 class="mb-0">{{movie.Director}}</h5>
+              <small>Director</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4 mb-4">
+    <div class="row">
+      <div class="col-sm-9">
+        <h4>What is Lorem Ipsum?</h4>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make
+          a
+          type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+          containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+          versions
+          of Lorem Ipsum.
+        </p>
+      </div>
+      <div class="col-sm-3">
+        <div class="mb-4">
+          <i class="fa fa-facebook fa-lg fa-fw"></i>
+          <i class="fa fa-twitter fa-lg fa-fw ml-3 mr-3"></i>
+          <i class="fa fa-instagram fa-lg fa-fw"></i>
+        </div>
+        <h5>Lenguaje</h5>
+        <p>{{movie.Language}}</p>
+        <h5>Tipo</h5>
+        <p>{{movie.Type}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.nav-link {
+    cursor: pointer;
+}
+.navbar-brand {
+    color: #dc3545;
+    font-size: 1.4em;
+}
+.form-control {
+    background-color: transparent;
+    color: #fff;
+    padding: 4px 15px;
+    height: auto;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-nav {
+    cursor: pointer;
+}
