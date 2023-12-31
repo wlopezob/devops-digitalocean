@@ -2,42 +2,41 @@
 
 ## STEPS
 ### 1. Deploy the basic architecture of the project [repo](https://github.com/wlopezob/devops-do/tree/feature/step-1)
-- container registry
-- kubernetes
-- namespace
-- secret dockerconfigjson
-- deploy app angular
+- Set up the container registry.
+- Configure Kubernetes, including the creation of a namespace.
+- Set up a Docker configuration JSON file and create a secret using it.
+- Deploy the Angular application.
 
 ### 2. Deploy loadbalancer and Ingress Controller With Custom Domain
-### 3. Create Azure Pipeline to deploy automatic (CI-CD)
+### 3. Create Azure Pipeline for automatic deploy  (CI-CD)
 
 ## Commands
-### register token DO
+### register token  Digital Ocean(DO)
 ```
 export DIGITALOCEAN_TOKEN=mytokenpa
 ```
 
-### start terraform
+### Initialize  terraform
 ```
 terraform init
 ```
 
-### create the plan
+### create the terraform plan
 ```
 terraform plan -out main.tfplan
 ```
 
-### execute the plan
+### execute the terraform  plan
 ```
 terraform apply "main.tfplan"
 ```
 
-### create the plan destroy
+### create the terraform  plan for destroy
 ```
 terraform plan -destroy -out main.destroy.tfplan
 ```
 
-### execute the plan destroy
+### execute the terraform  plan for destroy
 ```
 terraform apply main.destroy.tfplan
 ```
